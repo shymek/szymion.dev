@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jakub Szymion — Senior Android Engineer</title>
+<meta name="description" content="Jakub Szymion, Senior Android engineer with 12+ years in consumer apps, payments and growth (Dropbox, Sendwave). Open to Senior/Staff Android and Python backend roles, remote.">
+<meta name="author" content="Jakub Szymion">
+<link rel="canonical" href="https://jakub.szymion.dev/">
+
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Jakub Szymion — Senior Android Engineer">
+<meta property="og:description" content="12+ years shipping Android apps at scale. Most recently Mobile Growth at Dropbox, before that Payments at Sendwave. Open to new roles from December 2026.">
+<meta property="og:url" content="https://jakub.szymion.dev/">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230E7C6B'/%3E%3Ctext x='32' y='42' font-family='system-ui,sans-serif' font-size='30' font-weight='600' fill='white' text-anchor='middle'%3EJS%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Jakub Szymion",
+  "jobTitle": "Senior Android Engineer",
+  "url": "https://jakub.szymion.dev/",
+  "email": "mailto:jakub@szymion.dev",
+  "address": { "@type": "PostalAddress", "addressLocality": "Wrocław", "addressCountry": "PL" },
+  "sameAs": ["https://www.linkedin.com/in/jakub-szymion-8bb6a531/"],
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "Wrocław University of Science and Technology" },
+  "knowsAbout": ["Android", "Kotlin", "Jetpack Compose", "Google Play Billing", "Python", "Django", "Payments", "Growth engineering"]
+}
+</script>
+
+<style>
+  :root {
+    --bg: #F7F8FA;
+    --surface: #FFFFFF;
+    --ink: #1A2230;
+    --ink-soft: #4A5566;
+    --ink-mute: #7A8494;
+    --rule: #DCE1E7;
+    --accent: #0E7C6B;
+    --accent-ink: #0A5C50;
+    --accent-soft: #E3F1EE;
+    --focus: #0E7C6B;
+    --font: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #14181F;
+      --surface: #1B2029;
+      --ink: #E8ECF1;
+      --ink-soft: #B4BCC8;
+      --ink-mute: #7E8899;
+      --rule: #2C3340;
+      --accent: #3FB39F;
+      --accent-ink: #5FCDB9;
+      --accent-soft: #1E3A35;
+      --focus: #5FCDB9;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #14181F;
+    --surface: #1B2029;
+    --ink: #E8ECF1;
+    --ink-soft: #B4BCC8;
+    --ink-mute: #7E8899;
+    --rule: #2C3340;
+    --accent: #3FB39F;
+    --accent-ink: #5FCDB9;
+    --accent-soft: #1E3A35;
+    --focus: #5FCDB9;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font);
+    font-size: 17px;
+    line-height: 1.55;
+    font-feature-settings: "kern", "liga", "calt";
+  }
+  a { color: var(--accent-ink); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:hover { text-decoration-thickness: 2px; }
+  :focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; border-radius: 2px; }
+
+  .page {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 56px 16px 72px;
+  }
+  @media (min-width: 720px) {
+    .page { padding: 88px 24px 96px; }
+  }
+
+  /* ---------- Header ---------- */
+  header h1 {
+    font-size: 2.25rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    margin: 0 0 6px;
+  }
+  @media (min-width: 720px) { header h1 { font-size: 2.75rem; } }
+  .role {
+    font-size: 1.15rem;
+    color: var(--ink-soft);
+    margin: 0 0 32px;
+  }
+
+  .status {
+    border-left: 3px solid var(--accent);
+    padding: 4px 0 4px 20px;
+    margin: 0 0 28px;
+  }
+  .status p {
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    max-width: 34ch;
+  }
+  @media (min-width: 720px) { .status p { font-size: 1.4rem; } }
+  .status strong { font-weight: 600; color: var(--accent-ink); }
+
+  .contact {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 56px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 28px;
+    font-size: 0.95rem;
+  }
+  .contact li { color: var(--ink-soft); }
+  .contact a { color: var(--ink); }
+
+  /* ---------- Sections ---------- */
+  section { margin: 0 0 56px; }
+  h2 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--ink-mute);
+    margin: 0 0 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .summary p { margin: 0; max-width: 66ch; font-size: 1.05rem; }
+
+  /* Experience: date gutter + content */
+  .job {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4px 32px;
+    padding: 0 0 28px;
+    margin: 0 0 28px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .job:last-child { border-bottom: 0; margin-bottom: 0; padding-bottom: 0; }
+  @media (min-width: 720px) {
+    .job { grid-template-columns: 140px 1fr; }
+  }
+  .job .when {
+    color: var(--ink-mute);
+    font-size: 0.9rem;
+    font-variant-numeric: tabular-nums;
+    padding-top: 3px;
+    white-space: nowrap;
+  }
+  .job .when span { display: block; }
+  .job h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.3;
+  }
+  .job h3 small {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: var(--ink-soft);
+  }
+  .job .team {
+    color: var(--ink-soft);
+    font-style: italic;
+    margin: 6px 0 0;
+    font-size: 0.95rem;
+  }
+  .job ul {
+    margin: 10px 0 0;
+    padding-left: 18px;
+    max-width: 66ch;
+  }
+  .job li { margin: 0 0 8px; }
+  .job li:last-child { margin-bottom: 0; }
+  .job li b { font-weight: 600; }
+
+  /* Skills */
+  .skills { display: grid; grid-template-columns: 1fr; gap: 14px 32px; margin: 0; }
+  @media (min-width: 720px) { .skills { grid-template-columns: 140px 1fr; } }
+  .skills dt { font-weight: 600; color: var(--ink-soft); font-size: 0.95rem; padding-top: 2px; }
+  .skills dd { margin: 0 0 8px; max-width: 66ch; }
+  @media (min-width: 720px) { .skills dd { margin-bottom: 0; } }
+
+  /* Education / footer */
+  .edu { margin: 0; }
+  .edu b { font-weight: 600; }
+  .edu span { color: var(--ink-mute); display: block; font-size: 0.95rem; }
+
+  footer {
+    margin-top: 64px;
+    padding-top: 20px;
+    border-top: 1px solid var(--rule);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12px;
+    color: var(--ink-mute);
+    font-size: 0.9rem;
+  }
+  footer button {
+    font: inherit;
+    color: var(--ink);
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    padding: 6px 12px;
+    cursor: pointer;
+  }
+  footer button:hover { border-color: var(--ink-mute); }
+
+  @media (prefers-reduced-motion: no-preference) {
+    a, footer button { transition: text-decoration-thickness .12s, border-color .12s; }
+  }
+
+  /* ---------- Print: turns the page into a clean CV ---------- */
+  @media print {
+    :root, :root[data-theme="dark"] {
+      --bg: #fff; --surface: #fff; --ink: #000; --ink-soft: #333; --ink-mute: #555;
+      --rule: #bbb; --accent: #0E7C6B; --accent-ink: #0A5C50;
+    }
+    @page { size: A4; margin: 13mm 15mm; }
+    body { font-size: 9.5pt; line-height: 1.32; }
+    .page { max-width: none; padding: 0; }
+    header h1 { font-size: 19pt; margin-bottom: 2pt; }
+    .role { font-size: 10.5pt; margin-bottom: 7pt; }
+    .status { margin-bottom: 7pt; padding: 1pt 0 1pt 8pt; border-left-width: 2pt; }
+    .status p { font-size: 10pt; max-width: none; line-height: 1.3; }
+    .contact { margin-bottom: 10pt; gap: 3pt 12pt; font-size: 9pt; }
+    .contact a { text-decoration: none; color: #000; }
+    section { margin-bottom: 9pt; }
+    h2 { font-size: 8.5pt; margin-bottom: 5pt; padding-bottom: 3pt; }
+    .summary p { font-size: 9.5pt; max-width: none; }
+    .job { grid-template-columns: 80pt 1fr; gap: 0 10pt; padding-bottom: 5pt; margin-bottom: 5pt; }
+    .job .when { font-size: 8.5pt; padding-top: 1pt; }
+    .job h3 { font-size: 10pt; }
+    .job h3 small { font-size: 9pt; }
+    .job .team { margin-top: 2pt; font-size: 9pt; }
+    .job ul { margin-top: 4pt; padding-left: 12pt; max-width: none; }
+    .job li { margin-bottom: 2pt; }
+    .job h3, .job .team, .job li { break-inside: avoid; }
+    .skills { grid-template-columns: 80pt 1fr; gap: 2pt 10pt; }
+    .skills dt { font-size: 9pt; padding-top: 0; }
+    .skills dd { max-width: none; margin-bottom: 0; }
+    .edu span { font-size: 9pt; }
+    footer { display: none; }
+    a { color: inherit; text-decoration: none; }
+  }
+</style>
+</head>
+<body>
+<main class="page">
+
+  <header>
+    <h1>Jakub Szymion</h1>
+    <p class="role">Senior Android Engineer — 12+ years shipping consumer apps, payments and growth</p>
+
+    <div class="status">
+      <p>Looking for a <strong>Senior/Staff Android</strong> or <strong>Python backend</strong> role. Remote, EU time zones preferred. Available from <strong>December 2026</strong>.</p>
+    </div>
+
+    <ul class="contact">
+      <li><a href="mailto:jakub@szymion.dev">jakub@szymion.dev</a></li>
+      <li><a href="https://www.linkedin.com/in/jakub-szymion-8bb6a531/">LinkedIn</a></li>
+      <li>Wrocław, Poland</li>
+    </ul>
+  </header>
+
+  <section class="summary" aria-labelledby="h-summary">
+    <h2 id="h-summary">Summary</h2>
+    <p>Senior Android engineer with 12+ years shipping consumer apps at scale, most recently on Dropbox's Mobile Growth (monetization) team. I own features end to end — technical design, implementation, rollout, measurement — and have repeatedly been the sole Android engineer on cross-functional growth and billing projects. Strong track record in subscriptions, payments, ad attribution and A/B experimentation, with a habit of finding long-standing defects nobody else had noticed. I also build Python/Django backends, both professionally and in my own projects, and work daily with AI coding tools (Claude Code, Codex) as a core part of my workflow.</p>
+  </section>
+
+  <section aria-labelledby="h-exp">
+    <h2 id="h-exp">Experience</h2>
+
+    <article class="job">
+      <div class="when"><span>Mar 2024 – Nov 2026</span><span>remote</span></div>
+      <div>
+        <h3>Dropbox <small>Senior Software Engineer</small></h3>
+        <p class="team">Mobile Growth (monetization) team on the Dropbox Android app; previously Mobile Previews.</p>
+        <ul>
+          <li><b>Designed and built the new-market testing program</b> for Android as the sole Android engineer: an ad-attribution pipeline (Google Play Install Referrer, deeplinks) that identifies which campaign a user installed from and routes them to market-specific plans and upsell flows. Used to test pricing and plans in Indonesia and Colombia; owned technical design through rollout.</li>
+          <li><b>Built contextual upsells at key moments in the app</b> (Play Billing IAP v2, base plan IDs, GrowthBook-driven variants), generating new subscription revenue while reducing churn.</li>
+          <li><b>Led an upsell-frequency calibration project</b>: tuned prompt cadence through A/B experiments to maximise upsell revenue, delivering a significant lift in trial starts.</li>
+          <li><b>Resolved a major SEV</b> — a long-standing billing defect that had allowed users to hold duplicate active subscriptions — owning the investigation, client-side fix and verification.</li>
+          <li><b>Found and drove the fix for a years-old bug in the traffic proxy</b> that had been silently corrupting attribution data; identified the root cause and coordinated the repair across teams.</li>
+          <li><b>Hardened push-notification analytics</b>: gave every notification a stable ID and corrected event reporting, turning engagement data into a reliable input for growth decisions.</li>
+          <li><b>Built the Android front end for the signature-request flow</b> in the Dropbox app on top of an existing backend (Mobile Previews team).</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="job">
+      <div class="when"><span>Oct 2021 – Mar 2024</span><span>remote</span></div>
+      <div>
+        <h3>Sendwave <small>Senior Software Engineer</small></h3>
+        <p class="team">Payments team on the Sendwave money-transfer app (fintech).</p>
+        <ul>
+          <li><b>Rewrote the pay-in side of the app</b> — the flow that accepts payments from users — improving reliability and maintainability.</li>
+          <li><b>Implemented multi-currency recipients</b>, letting users send to recipients in different currencies.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="job">
+      <div class="when"><span>Oct 2020 – Sep 2021</span><span>London, remote</span></div>
+      <div>
+        <h3>uMotif <small>Senior Software Engineer</small></h3>
+        <ul>
+          <li>Delivered new functionality and improvements across uMotif's patient-facing clinical data-capture apps.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="job">
+      <div class="when"><span>Jul 2019 – Oct 2020</span><span>London, remote</span></div>
+      <div>
+        <h3>Babylon Health <small>Senior Software Engineer</small></h3>
+        <p class="team">Native Android app, team of ~40 Android engineers; architecture built on Orbit MVI.</p>
+        <ul>
+          <li>Owned new functionality and improvements to the chatbot triage feature.</li>
+          <li><b>Implemented a generic asynchronous feature as the sole developer</b> within a large, multi-squad codebase.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="job">
+      <div class="when"><span>Dec 2017 – Jul 2019</span><span>London, remote</span></div>
+      <div>
+        <h3>Tigerspike <small>Senior Software Engineer</small></h3>
+        <ul>
+          <li>Built multiple Android apps from scratch and extended existing ones for agency clients; largest project was <b>Priority Pass</b>.</li>
+          <li>Worked with distributed client teams across time zones, travelling on site when required.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="job">
+      <div class="when"><span>Jun 2015 – Jul 2017</span><span>Wrocław</span></div>
+      <div>
+        <h3>RST-IT <small>Senior Software Engineer (now Software Brothers)</small></h3>
+        <ul>
+          <li><b>Introduced MVVM with Data Binding</b> to the company while it was still in beta; it became the company-wide standard.</li>
+          <li>Built backend services (Python) behind the company's mobile apps alongside Android work, plus DevOps duties — about a fifth of my time.</li>
+          <li>Worked across many client projects — greenfield, feature work and maintenance — gaining breadth across the Android API surface.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="job">
+      <div class="when"><span>Mar 2014 – May 2015</span><span>Wrocław</span></div>
+      <div>
+        <h3>DOOK.pro <small>Android Engineer</small></h3>
+        <ul>
+          <li>Added features to a language-learning platform; built a food-ordering app MVP from scratch.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="job">
+      <div class="when"><span>Sep 2012 – Mar 2014</span><span>Wrocław</span></div>
+      <div>
+        <h3>LogToMobile <small>Android Engineer</small></h3>
+        <ul>
+          <li>Built multiple apps from scratch, usually as the only developer, while still at university; one took <b>2nd place in a Samsung S Pen SDK hackathon</b>.</li>
+        </ul>
+      </div>
+    </article>
+  </section>
+
+  <section aria-labelledby="h-skills">
+    <h2 id="h-skills">Skills</h2>
+    <dl class="skills">
+      <dt>Languages</dt>
+      <dd>Kotlin, Java, Python (Django), Dart (Flutter)</dd>
+      <dt>Android</dt>
+      <dd>Jetpack Compose, Coroutines &amp; Flow, Hilt / Dagger, Jetpack (Navigation, Room, Architecture Components), MVVM / MVI (Orbit), Retrofit, Firebase, Google Play Billing (IAP v2, base plans), Install Referrer, deeplinks</dd>
+      <dt>Backend</dt>
+      <dd>Python, Django, Django REST Framework, Celery, Redis, PostgreSQL</dd>
+      <dt>Growth</dt>
+      <dd>A/B testing &amp; feature flags (GrowthBook, Optimizely), ad attribution, analytics instrumentation, subscription &amp; upsell flows, incident (SEV) response</dd>
+      <dt>Testing</dt>
+      <dd>JUnit, Espresso, unit &amp; UI test suites</dd>
+      <dt>Tooling</dt>
+      <dd>AI-assisted development (Claude Code, Codex, in-house LLM tooling), Git, CI/CD; earlier: RxJava, Data Binding, Koin</dd>
+    </dl>
+  </section>
+
+  <section aria-labelledby="h-edu">
+    <h2 id="h-edu">Education</h2>
+    <p class="edu"><b>BSc Computer Science and Management</b> — Wrocław University of Science and Technology<span>2010 – 2013</span></p>
+  </section>
+
+  <footer>
+    <span>Last updated October 2026</span>
+    <button type="button" onclick="window.print()">Save as PDF</button>
+  </footer>
+
+</main>
+</body>
+</html>
